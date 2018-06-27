@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="testcases.TC003_Registration">
+        <methods>
+          <include name="setValue"/>
+          <include name="registration" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.TC003_Registration -->
+      <class name="testcases.TC007_HomePage">
+        <methods>
+          <include name="setValue"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.TC007_HomePage -->
+      <class name="testcases.TC001_LoginLogOut">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="setValue"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.TC001_LoginLogOut -->
+      <class name="testcases.TC008_SearchTestCases">
+        <methods>
+          <include name="homepage" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="setValue"/>
+        </methods>
+      </class> <!-- testcases.TC008_SearchTestCases -->
+      <class name="testcases.TC005_ForgotPassword">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="setValue"/>
+        </methods>
+      </class> <!-- testcases.TC005_ForgotPassword -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

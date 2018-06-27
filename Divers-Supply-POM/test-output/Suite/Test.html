@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 27 17:54:40 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>156 seconds (156341 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC008_SearchTestCases.homepage()'><b>homepage</b><br>Test class: testcases.TC008_SearchTestCases<br>Parameters: Swim Cap</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:34)
+	at utils.Reporter.reportStep(Reporter.java:44)
+	at pages.Search.&lt;init&gt;(Search.java:19)
+	at pages.HomePage.clickAllDeptLink(HomePage.java:135)
+	at testcases.TC008_SearchTestCases.homepage(TC008_SearchTestCases.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5740195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5740195'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:34)
+	at utils.Reporter.reportStep(Reporter.java:44)
+	at pages.Search.&lt;init&gt;(Search.java:19)
+	at pages.HomePage.clickAllDeptLink(HomePage.java:135)
+	at testcases.TC008_SearchTestCases.homepage(TC008_SearchTestCases.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>20</td>
+<td>testcases.TC008_SearchTestCases@1ee9faa</td></tr>
+<tr>
+<td title='testcases.TC003_Registration.registration()'><b>registration</b><br>Test class: testcases.TC003_Registration<br>Parameters: Rajesh , Kumar, rajeshkumar.r+rk@innoppl.com, Testinno_qa, Testinno_qa</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:34)
+	at utils.Reporter.reportStep(Reporter.java:44)
+	at pages.P3_MyAccountPage.&lt;init&gt;(P3_MyAccountPage.java:16)
+	at pages.P2_CreateAnAccount.clickSubmitCA(P2_CreateAnAccount.java:85)
+	at testcases.TC003_Registration.registration(TC003_Registration.java:38)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace987043", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace987043'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:34)
+	at utils.Reporter.reportStep(Reporter.java:44)
+	at pages.P3_MyAccountPage.&lt;init&gt;(P3_MyAccountPage.java:16)
+	at pages.P2_CreateAnAccount.clickSubmitCA(P2_CreateAnAccount.java:85)
+	at testcases.TC003_Registration.registration(TC003_Registration.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>40</td>
+<td>testcases.TC003_Registration@78c730</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC005_ForgotPassword.forgotPassword()'><b>forgotPassword</b><br>Test class: testcases.TC005_ForgotPassword<br>Parameters: rajeshkumar.r@innoppl.com</td>
+<td></td>
+<td>47</td>
+<td>testcases.TC005_ForgotPassword@167c1fc</td></tr>
+<tr>
+<td title='testcases.TC007_HomePage.homePage()'><b>homePage</b><br>Test class: testcases.TC007_HomePage<br>Parameters: rajeshkumar.r@innoppl.com</td>
+<td></td>
+<td>26</td>
+<td>testcases.TC007_HomePage@38203</td></tr>
+<tr>
+<td title='testcases.TC001_LoginLogOut.homepage()'><b>homepage</b><br>Test class: testcases.TC001_LoginLogOut<br>Parameters: rajeshkumar.r@innoppl.com, Testinno_qa</td>
+<td></td>
+<td>44</td>
+<td>testcases.TC001_LoginLogOut@4af044</td></tr>
+</table><p>
+</body>
+</html>

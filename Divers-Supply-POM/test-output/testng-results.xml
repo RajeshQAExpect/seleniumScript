@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="40924" started-at="2018-04-02T06:47:04Z" finished-at="2018-04-02T06:47:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="40924" started-at="2018-04-02T06:47:04Z" finished-at="2018-04-02T06:47:45Z">
+      <class name="testcases.TC008_SearchTestCases">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC008_SearchTestCases@c0edeb]" name="beforeSuite" is-config="true" duration-ms="2206" started-at="2018-04-02T12:17:02Z" finished-at="2018-04-02T12:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.TC008_SearchTestCases@c0edeb]" name="beforeTest" is-config="true" duration-ms="1" started-at="2018-04-02T12:17:04Z" finished-at="2018-04-02T12:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setValue()[pri:0, instance:testcases.TC008_SearchTestCases@c0edeb]" name="setValue" is-config="true" duration-ms="0" started-at="2018-04-02T12:17:04Z" finished-at="2018-04-02T12:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValue -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC008_SearchTestCases@c0edeb]" name="beforeMethod" is-config="true" duration-ms="19003" started-at="2018-04-02T12:17:08Z" finished-at="2018-04-02T12:17:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="homepage(java.lang.String)[pri:0, instance:testcases.TC008_SearchTestCases@c0edeb]" name="homepage" duration-ms="18201" started-at="2018-04-02T12:17:27Z" data-provider="fetchData" finished-at="2018-04-02T12:17:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Swim Cap]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:34)
+	at utils.Reporter.reportStep(Reporter.java:44)
+	at pages.Search.<init>(Search.java:19)
+	at pages.HomePage.clickAllDeptLink(HomePage.java:135)
+	at testcases.TC008_SearchTestCases.homepage(TC008_SearchTestCases.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC008_SearchTestCases@c0edeb]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-04-02T12:17:45Z" finished-at="2018-04-02T12:17:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC008_SearchTestCases@c0edeb]" name="afterSuite" is-config="true" duration-ms="922" started-at="2018-04-02T12:17:45Z" finished-at="2018-04-02T12:17:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testcases.TC008_SearchTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
